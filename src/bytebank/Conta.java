@@ -6,10 +6,38 @@ package bytebank;
  * @author Natasha Busnardo
  */
 public class Conta {
-    double saldo;
-    int agencia;
-    int numero;
-    Cliente titular;
+    private double saldo;
+    private int agencia;
+    private int numero;
+    private Cliente titular;
+
+    public double getSaldo() {
+        return saldo;
+    }
+
+    public int getAgencia() {
+        return agencia;
+    }
+
+    public void setAgencia(int agencia) {
+        this.agencia = agencia;
+    }
+
+    public int getNumero() {
+        return numero;
+    }
+
+    public void setNumero(int numero) {
+        this.numero = numero;
+    }
+
+    public Cliente getTitular() {
+        return titular;
+    }
+
+    public void setTitular(Cliente titular) {
+        this.titular = titular;
+    }
 
     /** Método que realiza o depósito em uma conta bancária.
      * @param valor valor a ser depositado.
