@@ -2,19 +2,17 @@ package bytebank;
 
 public class TestaMetodo {
     public static void main(String[] args) {
-        Conta contaDoPaulo = new Conta();
-        contaDoPaulo.saldo = 100;
-        contaDoPaulo.deposita(50);
-        System.out.println(contaDoPaulo.saldo);
+        Cliente natasha = new Cliente();
+        natasha.nome = "Natasha Busnardo";
+        natasha.cpf = "222.222.222-22";
+        natasha.profissao = "programadoraa";
 
-        boolean conseguiuRetirar = contaDoPaulo.saca(20);
-        System.out.println(contaDoPaulo.saldo);
-        System.out.println(conseguiuRetirar);
+        Conta contaDaNatasha = new Conta();
+        contaDaNatasha.deposita(100);
 
-        Conta contaDaMarcela = new Conta();
-        contaDaMarcela.deposita(1000);
-
-        contaDaMarcela.transfere(300, contaDoPaulo);
-        System.out.println(contaDaMarcela.saldo);
+        contaDaNatasha.titular = natasha;
+        System.out.println(contaDaNatasha.titular.nome);
+        System.out.println(contaDaNatasha.titular);
+        System.out.println(contaDaNatasha.saldo);
     }
 }

@@ -9,7 +9,7 @@ public class Conta {
     double saldo;
     int agencia;
     int numero;
-    String titular;
+    Cliente titular;
 
     /** Método que realiza o depósito em uma conta bancária.
      * @param valor valor a ser depositado.
