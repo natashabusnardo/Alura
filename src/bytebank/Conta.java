@@ -12,7 +12,6 @@ public class Conta {
     private Cliente titular;
     private static int total;
 
-
     public Conta(int agencia, int numero) {
         Conta.total++;
         this.agencia = agencia;
@@ -79,8 +78,7 @@ public class Conta {
      * @return Retorna um valor booleano que é verdadeiro caso for possível realizar a transferência.
      */
     public boolean transfere(double valor, Conta destino) {
-        if (this.saldo >= valor) {
-            this.saldo -= valor;
+        if (this.saca(valor)) {
             destino.deposita(valor);
             return true;
         } else {
