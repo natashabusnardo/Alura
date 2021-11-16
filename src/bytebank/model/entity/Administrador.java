@@ -1,10 +1,11 @@
 package bytebank.model.entity;
 
-public class Gerente extends Funcionario implements Autenticavel {
+public class Administrador extends Funcionario implements Autenticavel {
     private int senha;
 
+    @Override
     public double getBonificacao() {
-        return getBonificacao() + super.getSalario();
+        return 50;
     }
 
     @Override
