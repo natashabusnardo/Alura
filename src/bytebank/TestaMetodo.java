@@ -7,7 +7,7 @@ public class TestaMetodo {
         natasha.setCpf("222.222.222-22");
         natasha.setProfissao("programadora");
 
-        Conta contaDaNatasha = new Conta(123, 456);
+        Conta contaDaNatasha = new ContaCorrente(123, 456);
         contaDaNatasha.deposita(100);
 
         contaDaNatasha.setTitular(natasha);
@@ -15,8 +15,8 @@ public class TestaMetodo {
         System.out.println(contaDaNatasha.getTitular());
         System.out.println(contaDaNatasha.getSaldo());
 
-        Conta conta2 = new Conta(1337, 16549);
-        Conta conta3 = new Conta(2112, 14660);
+        Conta conta2 = new ContaPoupanca(1337, 16549);
+        Conta conta3 = new ContaCorrente(2112, 14660);
 
         System.out.println(Conta.getTotal());
     }

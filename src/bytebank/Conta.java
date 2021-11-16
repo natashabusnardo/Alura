@@ -5,8 +5,8 @@ package bytebank;
  *
  * @author Natasha Busnardo
  */
-public class Conta {
-    private double saldo;
+public abstract class Conta {
+    protected double saldo;
     private int agencia;
     private int numero;
     private Cliente titular;
@@ -51,9 +51,7 @@ public class Conta {
      *
      * @param valor valor a ser depositado.
      */
-    public void deposita(double valor) {
-        this.saldo += valor;
-    }
+    public abstract void deposita(double valor);
 
     /**
      * Método que realiza o saque bancário verificando se há saldo disponível.
