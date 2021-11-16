@@ -1,6 +1,6 @@
-package bytebank;
+package bytebank.model.entity;
 
-public class Designer extends Funcionario{
+public class Designer extends Funcionario {
     @Override
     public double getBonificacao() {
         return 200;

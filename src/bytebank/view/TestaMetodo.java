@@ -1,4 +1,9 @@
-package bytebank;
+package bytebank.view;
+
+import bytebank.model.entity.Cliente;
+import bytebank.model.entity.Conta;
+import bytebank.model.entity.ContaCorrente;
+import bytebank.model.entity.ContaPoupanca;
 
 public class TestaMetodo {
     public static void main(String[] args) {

@@ -1,4 +1,6 @@
-package bytebank;
+package bytebank.view;
+
+import bytebank.model.entity.Gerente;
 
 public class TesteGerente {
     public static void main(String[] args) {

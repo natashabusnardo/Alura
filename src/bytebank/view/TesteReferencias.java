@@ -1,4 +1,7 @@
-package bytebank;
+package bytebank.view;
+
+import bytebank.controller.ControleBonificacao;
+import bytebank.model.entity.Gerente;
 
 public class TesteReferencias {
     public static void main(String[] args) {

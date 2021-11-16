@@ -1,6 +1,6 @@
-package bytebank;
+package bytebank.model.entity;
 
-public class Gerente extends Funcionario{
+public class Gerente extends Funcionario {
     private int senha;
 
     public void setSenha(int senha) {

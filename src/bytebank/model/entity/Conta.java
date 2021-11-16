@@ -1,4 +1,4 @@
-package bytebank;
+package bytebank.model.entity;
 
 /**
  * Classe que representa a conta bancária.

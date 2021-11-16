@@ -1,4 +1,6 @@
-package bytebank;
+package bytebank.controller;
+
+import bytebank.model.entity.Funcionario;
 
 public class ControleBonificacao {
     private double soma;
