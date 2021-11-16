@@ -1,5 +1,7 @@
 package bytebank.model.entity;
 
+import bytebank.controller.AutenticacaoUtil;
+
 /**
  * Classe que representa o cliente.
  *
@@ -10,6 +12,7 @@ public class Cliente implements Autenticavel {
     private String cpf;
     private String profissao;
     private int senha;
+    private AutenticacaoUtil autenticacaoUtil;
 
     public String getNome() {
         return nome;
@@ -35,17 +38,17 @@ public class Cliente implements Autenticavel {
         this.profissao = profissao;
     }
 
+    public Cliente() {
+        this.autenticacaoUtil = new AutenticacaoUtil();
+    }
+
     @Override
     public void setSenha(int senha) {
-        this.senha = senha;
+        this.autenticacaoUtil.setSenha(senha);
     }
 
     @Override
     public boolean autentica(int senha) {
-        if (this.senha == senha) {
-            return true;
-        } else {
-            return false;
-        }
+        return this.autenticacaoUtil.autentica(senha);
     }
 }
